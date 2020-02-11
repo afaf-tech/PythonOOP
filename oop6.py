@@ -2,6 +2,7 @@
 
 # Property Decorator - Getter, Setter, And Deleters
 class Employee:
+    __secretAttr=10
     #it's like a consructor on other languages
     def __init__(self, first, last):
         self.first = first
@@ -34,6 +35,7 @@ emp1.fullname ='Cobey Schreaver'
 print(emp1.first)
 print(emp1.email)
 print(emp1.fullname)
+print(emp1.__secretAttr)
 
 
 del emp1.fullname
